@@ -1,6 +1,6 @@
 {
-  "short_name": "Resume CV",
-  "name": "Resume CV - React.JS",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
