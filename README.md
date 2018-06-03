@@ -1,6 +1,6 @@
 # Resume CV - React.JS
 
-Demo online disponível [aqui](https://xbrunosousa.github.io/resume-cv-reactjs/dist).
+Demo online disponível <a href="https://xbrunosousa.github.io/resume-cv-reactjs/dist" target="_blank">aqui</a>.
 
 ![Mobile](https://media.giphy.com/media/TIztlOydNrkI5xfQPJ/giphy.gif)
 
