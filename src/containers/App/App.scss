@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+$fontDef: 'Montserrat';
+
+@mixin fontLeft {
+	font: {
+		size: 12px;
+		family: $fontDef;
+	}
+	text-align: center;
+	color: #D2D0CF;
+	width: 80%;
+}
+
+@mixin avatarSetup { // Setup avatar media queries
+	background: url('../../assets/bg-avatar.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+// Styles of left column
+.leftColumn {
+	background: #333;
+}
+
+.name {
+	color: #fff;
+	font: {
+		family: $fontDef;
+		weight: bold;
+		size: 37px;
+	}
+	text: {
+		align:center;
+		transform: uppercase;
+	}
+	letter-spacing: 6px;
+}
+
+.profession {
+	font: {
+		size: 12px;
+		family: $fontDef;
+	}
+	color: #fff;
+	letter-spacing: 5px;
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+}
+
+.workExperience {
+	color: #232021;
+	font: {
+		family: $fontDef;
+		size: 16px;
+	}
+}
+
+.lineLeft {
+	height: 1px;
+	width: 100%;
+	background: #fff;
+	margin: 50px 0;
+}
+
+// Media Queries Avatar and Background Avatar
+@media (min-width: 1200px) { // +1200px
+	.avatarImg { // Avatar image profile
+		padding-top: 90px;
+		margin: 0 auto;
+		display: block;
+		width: 30%;
+	}
+	.avatar { // Div with avatar
+		@include avatarSetup;
+		background-size: 80%;
+		height: 300px;
+	}
+}
+@media (min-width: 991px) and (max-width: 1199px) { // 991px ~ 1199px
+	.avatarImg { // Avatar image profile
+		padding-top: 90px;
+		margin: 0 auto;
+		display: block;
+		width: 40%;
+	}
+	.avatar { // Div with avatar
+		@include avatarSetup;
+		background-size: 100%;
+		height: 300px;
+	}
+}
+@media (min-width: 768px) and (max-width: 990px) { // 768px ~ 990px
+	.avatarImg { // Avatar image profile
+		padding-top: 105px;
+		margin: 0 auto;
+		display: block;
+		width: 38%;
+	}
+	.avatar { // Div with avatar
+		@include avatarSetup;
+		background-size: 95%;
+		height: 300px;
+	}
+}
+@media (max-width: 767px) { // -767px
+	.avatarImg { // Avatar image profile
+		padding-top: 100px;
+		margin: 0 auto;
+		display: block;
+		width: 22%;
+	}
+	.avatar { // Div with avatar
+		@include avatarSetup;
+		background-size: 60%;
+		height: 300px;
+	}
+}
+
+@media (max-width: 338px) { // -338px
+	.avatarImg { // Avatar image profile
+		padding-top: 110px;
+		margin: 0 auto;
+		display: block;
+		width: 30%;
+	}
+	.avatar { // Div with avatar
+		@include avatarSetup;
+		background-size: 80%;
+		height: 300px;
+	}
+}
+// /Media Queries Avatar and Background Avatar
+
+.profile, .contact, .skills {
+	text: {
+		transform: uppercase;
+		align: center;
+	}
+	color: #FBFCFB;
+	font: {
+		family: $fontDef;
+		weight: 500;
+		size: 16px;
+	}
+}
+
+.skills {
+	margin-top: 30px;
+}
+
+.contact {
+	padding-top: 30px;
+}
+
+.hrLeft {
+	height: 1px;
+	width: 50%;
+	background: #D2D0CF;
+}
+
+.descript {
+	@include fontLeft;
+	margin: 0 auto;
+	letter-spacing: 2px;
+	// width: 80%;
+}
+
+.tel, .cel {
+	color: #D2D0CF;
+	text-align: center;
+	letter-spacing: 2px;
+	font: {
+		size: 14px;
+		family: $fontDef;
+	}
+}
+
+.address, .mail, .website {
+	@include fontLeft;
+	margin: 0 auto;
+	letter-spacing: 3px;
+}
+
+.address {
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.mail {
+	margin-bottom: 30px;
+}
+
+.progressBar {
+	background-color: #333 !important;
+	border-radius: 0 !important;
+	border: 1px solid #fff;
+	height: 20px !important;
+	width: 80%;
+	margin: 0 auto; 
+	margin-bottom: 25px;
+}
+
+.titleSkill { // skill name
+	font: {
+		family: $fontDef !important;
+		size: 12px;
+		weight: 100;
+	}
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+	color: #FBFCFB;
+	letter-spacing: 2px;
+	padding-top: 0px;
+}
+// /Styles of left column
+
+
+// Styles of right column
+.workExperience, .education {
+	text: {
+		transform: uppercase;
+	}
+	font: {
+		weight: bold;
+		family: $fontDef;
+		size: 20px;
+	}
+	letter-spacing: 2px;
+}
+
+.workExperience {
+	padding-top: 50px;
+}
+
+.hrRight {
+	border: 2px solid #333;
+	margin: -10px 0 20px 0;
+}
+
+.jobTitle, .eduTitle {
+	font: {
+		family: $fontDef;
+		size: 18px;
+		weight: bold;
+	}
+	text: {
+		transform: uppercase;
+	}
+	letter-spacing: 1px;
+}
+
+@mixin jobDateNdescript {
+	font: {
+		family: $fontDef;
+		size: 13px;
+		weight: 600;
+	}
+}
+
+.jobDate, .eduDate {
+	@include jobDateNdescript;
+	letter-spacing: 2px;
+}
+
+.jobDescript, .eduDescript {
+	@include jobDateNdescript;
+	margin-bottom: 40px;
+	font-weight: 600;
+}
+// /Styles of right column
+
+.avatarImg {
+	border: {
+		bottom-right-radius: 30%;
+		bottom-left-radius: 30%;
+	}
+}
+
+// Media Right Column
+@media (min-width: 500px) { // Desktop Only
+	.rightColumn {
+		margin-left: 20px;
+		border: { // Add borders to right column
+			right: solid 1px grey;
+			bottom: solid 1px grey;
+			top: solid 1px grey;
+		}
+	}
+}
+// /Media Right Column
