@@ -15,7 +15,7 @@ $ yarn start
 ```
 Acesse a aplicação em `http://localhost:3000` 👨🏻‍💻
 
-## Build:
+### Build:
 Em sua linha de comando, dentro do diretório do projeto, digite:
 ```sh
 $ yarn build
@@ -32,7 +32,7 @@ $ npm start
 ```
 Acesse a aplicação em `http://localhost:3000` 👨🏻‍💻
 
-## Build:
+### Build:
 Em sua linha de comando, dentro do diretório do projeto, digite:
 ```sh
 $ npm run build

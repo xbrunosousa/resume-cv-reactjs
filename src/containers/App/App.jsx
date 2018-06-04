@@ -6,6 +6,7 @@ import Loading from '../loading/Loading'
 import Education from './Education'
 import WorkExperience from './WorkExperience'
 import Skills from './Skills'
+import ReactGA from 'react-ga'
 
 class App extends Component {
 	constructor(props) {
@@ -25,6 +26,8 @@ class App extends Component {
 					isLoading: false,
 				})
 			})
+		ReactGA.initialize('UA-118867430-1') // Google Analytics
+		ReactGA.pageview(window.location.pathname + window.location.search) // Google Analytics
 	}
 
 	render() { // Shows load screen if API data has not yet been loaded
@@ -83,8 +86,8 @@ class App extends Component {
 								cv.profile.skills.map((skill, key) => {
 									return (
 										<Skills key={key}
-										name={skill.name}
-										value={skill.value} />
+											name={skill.name}
+											value={skill.value} />
 									)
 								})
 							}
@@ -102,9 +105,9 @@ class App extends Component {
 								cv.profile.experience.map((experience, key) => {
 									return (
 										<WorkExperience key={key}
-										name={experience.name}
-										date={experience.date}
-										description={experience.description} />
+											name={experience.name}
+											date={experience.date}
+											description={experience.description} />
 									)
 								})
 							}
