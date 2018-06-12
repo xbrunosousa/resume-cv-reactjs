@@ -10,7 +10,7 @@ Demo online disponível <a href="https://xbrunosousa.github.io/resume-cv-reactjs
 Em sua linha de comando digite:
 ```sh
 $ git clone https://github.com/xbrunosousa/resume-cv-reactjs.git && cd resume-cv-reactjs
-$ yarn install
+$ yarn
 $ yarn start
 ```
 Acesse a aplicação em `http://localhost:3000` 👨🏻‍💻
