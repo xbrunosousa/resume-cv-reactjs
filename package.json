@@ -53,10 +53,10 @@
 		"start": "node scripts/start.js",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
-		"build": "node scripts/build.js && rm -rf dist && mv build dist",
+		"build": "node scripts/build.js",
 		"test": "node scripts/test.js --env=jsdom"
 	},
-	"homepage": "https://xbrunosousa.github.io/resume-cv-reactjs/dist/",
+	"homepage": "https://xbrunosousa.github.io/resume-cv-reactjs/",
 	"jest": {
 		"collectCoverageFrom": [
 			"src/**/*.{js,jsx}"
