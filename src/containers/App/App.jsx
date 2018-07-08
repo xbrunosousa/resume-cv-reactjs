@@ -26,7 +26,7 @@ class App extends Component {
 					isLoading: false,
 				})
 			})
-		ReactGA.initialize('UA-118867430-1') // Google Analytics
+		ReactGA.initialize('UA-121994767-1') // Google Analytics
 		ReactGA.pageview(window.location.pathname + window.location.search) // Google Analytics
 	}
 
