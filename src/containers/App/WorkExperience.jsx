@@ -1,14 +1,13 @@
-import React from 'react'
-import styles from './App.scss'
+import React from 'react';
 
 function WorkExperience(props) {
-	return (
-		<div>
-			<p className={styles.jobTitle}>{props.name}</p>
-			<p className={styles.jobDate}>{props.date}</p>
-			<p className={styles.jobDescript}>{props.description}</p>
-		</div>
-	)
+  return (
+    <div>
+      <p className="jobTitle">{props.name}</p>
+      <p className="jobDate">{props.date}</p>
+      <p className="jobDescript">{props.description}</p>
+    </div>
+  );
 }
 
-export default WorkExperience
+export default WorkExperience;

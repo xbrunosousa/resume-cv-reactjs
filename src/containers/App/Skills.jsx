@@ -1,15 +1,17 @@
-import React from 'react'
-import styles from './App.scss'
-import {Progress} from 'reactstrap'
+import React from 'react';
+import { Progress } from 'reactstrap';
 
 function Skills(props) {
-	return (
-		<div key={props.index}>
-			<p className={styles.titleSkill}>{props.name}</p>
-			<Progress color="white"
-				className={styles.progressBar} value={props.value.replace(/%/, '')} />
-		</div>
-	)
+  return (
+    <div key={props.index}>
+      <p className="titleSkill">{props.name}</p>
+      <Progress
+        color="white"
+        className="progressBar"
+        value={props.value.replace(/%/, '')}
+      />
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;
