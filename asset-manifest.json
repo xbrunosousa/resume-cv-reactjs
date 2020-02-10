@@ -1,6 +1,22 @@
 {
-  "main.css": "styles.css",
-  "main.css.map": "styles.css.map",
-  "main.js": "static/js/main.a340a3cb.js",
-  "main.js.map": "static/js/main.a340a3cb.js.map"
+  "files": {
+    "main.css": "/resume-cv-reactjs/static/css/main.d7d529db.chunk.css",
+    "main.js": "/resume-cv-reactjs/static/js/main.045ab6c6.chunk.js",
+    "main.js.map": "/resume-cv-reactjs/static/js/main.045ab6c6.chunk.js.map",
+    "runtime-main.js": "/resume-cv-reactjs/static/js/runtime-main.aab6b396.js",
+    "runtime-main.js.map": "/resume-cv-reactjs/static/js/runtime-main.aab6b396.js.map",
+    "static/js/2.2d930d35.chunk.js": "/resume-cv-reactjs/static/js/2.2d930d35.chunk.js",
+    "static/js/2.2d930d35.chunk.js.map": "/resume-cv-reactjs/static/js/2.2d930d35.chunk.js.map",
+    "index.html": "/resume-cv-reactjs/index.html",
+    "precache-manifest.4d1580c6413d2e94c4dc0670210daf68.js": "/resume-cv-reactjs/precache-manifest.4d1580c6413d2e94c4dc0670210daf68.js",
+    "service-worker.js": "/resume-cv-reactjs/service-worker.js",
+    "static/css/main.d7d529db.chunk.css.map": "/resume-cv-reactjs/static/css/main.d7d529db.chunk.css.map",
+    "static/js/2.2d930d35.chunk.js.LICENSE.txt": "/resume-cv-reactjs/static/js/2.2d930d35.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aab6b396.js",
+    "static/js/2.2d930d35.chunk.js",
+    "static/css/main.d7d529db.chunk.css",
+    "static/js/main.045ab6c6.chunk.js"
+  ]
 }
