@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "gh-pages": "2.2.0",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "react-ga": "2.7.0",
     "reactstrap": "8.4.1"
   },
